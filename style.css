@@ -1,0 +1,23 @@
+body{
+ margin:30px;
+
+ background-color: black;
+
+ color:white;
+ font-family:"JetBrains Mono";
+}
+a{
+ color:#0087bd;
+ font-weight: bold;
+ text-decoration: none;
+}
+#header h1::after{
+ opacity:0;
+ content:"_";
+ animation: cursorBlink 1s steps(1) infinite;
+}
+@keyframes cursorBlink {
+ 50% {
+  opacity: 1;
+ }
+}
